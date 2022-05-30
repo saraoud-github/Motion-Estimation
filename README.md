@@ -1,10 +1,42 @@
 # Motion-Estimation
 
-## Approaches:
+## Application: Motion Estimation
 
-This repository contains three approaches to estimate motion in a video:
+Motion is estimated by drawing the optical flow within two videos of moving cars (https://www.youtube.com/watch?v=Y1jTEyb3wiI)(https://www.bogotobogo.com/python/OpenCV_Python/images/mean_shift_tracking/slow_traffic_small.mp4) 
+using three different approaches:
+1. FAST keypoint detector algorithm with the pyramid implementation of the Lucas-Kanade (KLT) 
+algorithm (Optical flow. OpenCV. (n.d.). Retrieved November 7, 2021, from https://docs.opencv.org/3.4.15/d4/dee/tutorial_optical_flow.html).
+2. FAST keypoint detector with the FREAK keypoint descriptor (descriptor matching).
+3. FAST keypoint detector with the LUCID keypoint descriptor (descriptor matching).
 
-1. FAST is coupled with KLT to obtain the optical flow within a video.
-2. FAST is used to detect keypoints and then is coupled with FREAK, which detects the acquired keypoints’ descriptors, and then uses them for
-descriptor matching
-3. Approach 2 is repeated with FAST and LUCID to obtain the optical flow. 
+## Steps to run KLTOpticalFlow_Gray:
+
+1. Open the Code:Blocks IDE
+2. Go to File --> Open...
+3. Select KLTOpticalFlow_Gray.cbp located inside the extracted zipped folder ("Mrad_Oud_Project1\Code\KLTOpticalFlow_Gray").
+Note: "KLT_Gray_Arrow.cbp" (under "Mrad_Oud_Project1\Code\KLT_Gray_Arrow") is the same code but it outputs the optical flow using arrows.
+Note: "slow_traffic_small.mp4" was also used to compare results. To use it, change the VideoCapture object name in the code.
+4. Press the "build and run" button.
+5. A console screen and a windows will appear showing the optical flow obtained from the pyramid implementation of the KLT algorithm.
+6. Exit the program by pressing ESC.
+
+## Steps to run FAST_FREAK:
+
+1. Open the Code:Blocks IDE
+2. Go to File --> Open...
+3. Select FAST_FREAK.cbp located inside the extracted zipped folder ("Mrad_Oud_Project1\Code\FAST_FREAK").
+Note: "slow_traffic_small.mp4" was also used to compare results. To use it, change the VideoCapture object name in the code.
+4. Press the "build and run" button.
+5. A console screen and a windows will appear showing the optical flow obtained from using FAST + FREAK algorithms.
+6. Exit the program by pressing ESC.
+
+## Steps to run FAST_LUCID:
+
+1. Open the Code:Blocks IDE
+2. Go to File --> Open...
+3. Select FAST_LUCID.cbp located inside the extracted zipped folder ("Mrad_Oud_Project1\Code\FAST_LUCID").
+Note: "slow_traffic_small.mp4" was also used to compare results. To use it, change the VideoCapture object name in the code.
+4. Press the "build and run" button.
+5. A console screen and a windows will appear showing the optical flow obtained from using FAST + LUCID algorithms.
+6. Exit the program by pressing ESC.
+
