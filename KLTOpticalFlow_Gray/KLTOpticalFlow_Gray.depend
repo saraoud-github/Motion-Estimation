@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1636309024 source:d:\courses\lau computer engineering\year 5\fall 2021\topics in computer vision & image processing\project 1\cbp projects\kltopticalflow_gray\main.cpp
+	<iostream>
+	<opencv2/core.hpp>
+	<opencv2/highgui.hpp>
+	<opencv2/imgproc.hpp>
+	<opencv2/videoio.hpp>
+	<opencv2/video.hpp>
+	"opencv2/features2d.hpp"
+	"opencv2/xfeatures2d.hpp"
+
